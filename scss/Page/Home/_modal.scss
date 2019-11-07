@@ -1,0 +1,108 @@
+.modal{
+    .modal-dialog{
+        .modal-content{
+            .modal-header{
+                .hr{
+                    border-bottom: 1px solid #ddd;
+                    text-align: center;
+                    height: 8px;
+                    position: relative;
+                    margin: 30px 0;
+                    &::after{
+                        content: "or";
+                        position: absolute;
+                        top: -180%;
+                        left:45%;
+                        font-size: 25px;
+                        padding: 0 10px;
+                        background-color: white;
+                    }
+                }
+                padding: 0 45px;
+                display: block;
+                border-bottom: none;
+                h4{
+                    text-align: center;
+                    margin: 25px 0;
+                }
+                .facebook{
+                    padding: 8px;
+                    background-color: #4267b2;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    p{
+                        margin-bottom: 0;
+                        width: 100%;
+                    }
+                    i{
+                        font-size: 35px;
+                    }
+                }
+                .google{
+                    padding: 8px;
+                    background-color: #fafafa;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    p{
+                        margin-bottom: 0;
+                        width: 100%;
+                    }
+                    img{
+                        width: 30.63px;
+                        height: 34.4px;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 0 45px;
+                form{
+                    .submit{
+                        background-color: $green;
+                        padding: 15px;
+                        color: white;
+                        font-weight: bold;
+                        width: 358px;
+                        height: 66.4px;
+                    }
+                    .check{
+                        margin-top: 10px;
+                        display: flex;
+                        margin-bottom: 0;
+                        justify-content: space-between;
+                        .forget{
+                            p{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .joinnow{
+            border-top: 1px solid #ddd;
+            text-align: center;
+            span{
+                margin: 20px 0;
+                display: block;
+                a{
+                    color: $green;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width:500px;
+    margin: 30px auto;
+}
+}

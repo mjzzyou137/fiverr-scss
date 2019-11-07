@@ -1,0 +1,40 @@
+
+// DISPLAY TEXT
+
+@mixin text($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+ }
+ 
+ // RESPONSIVE
+ @mixin md {
+    @media (max-width: #{$screen-md}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl}) {
+        @content;
+    }
+ }
+ @mixin rwd($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+ }

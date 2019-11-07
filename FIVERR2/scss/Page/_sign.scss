@@ -1,0 +1,21 @@
+.sign1{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    p{
+        color: $gray-normal;
+        font-size: 22px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    a{
+        padding: 12px 35px;
+        background: $green;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}

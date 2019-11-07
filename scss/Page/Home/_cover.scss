@@ -1,0 +1,378 @@
+.cover{
+    position: relative;
+    background-color: $banner;
+    height: 600px;
+    .slideImage{
+        position: absolute;
+        right: 175px;
+        bottom: -7px;
+        width: 496px;
+        height:498px;
+        background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-matthew2x.png") no-repeat center;
+        animation: slide 20s infinite;
+        @include rwd(1520) {
+            right: 0px;
+            width: 330px;
+        }
+        @include rwd(992) {
+            display: none;
+        }
+    }
+    @keyframes slide{
+        0%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-matthew2x.png") no-repeat center;
+        }
+        20%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-darren2x.png")no-repeat center;
+        }
+        40%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-nichelle2x.png")no-repeat center;
+        }
+        60%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-tobee2x.png")no-repeat center;
+        }
+        80%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-sharon2x.png")no-repeat center;
+        }
+        100%{
+            background: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_496,dpr_1.0/general_assets/logged_out_homepage/assets/hero/900-melissa2x.png")no-repeat center;  
+        }
+    }
+    .polygon{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 1100px;
+        height: 400px;
+        background:$green;
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+        @include rwd(992) {
+            display: none;
+        }
+    }
+    .containerSlideInfo{
+        position: absolute;
+        bottom: 0px;
+        right: 266px;
+        height: 50px;
+        // overflow: hidden;
+        
+        @include rwd(1520) {
+            right: 0px;
+        }
+        @include rwd(992) {
+            display: none;
+        }
+        .slide-info{
+            @include text($white,$fs-15,$fw-normal);
+            .fas{
+                color:$yellow;
+            }
+            .info-1{
+                opacity: 0;
+                animation: slideInfo1 20s ease infinite;
+            }
+            .info-2{
+                transform: translateY(-140%);
+                opacity: 0;
+                animation: slideInfo2 20s ease infinite;
+            }
+            .info-3{
+                transform: translateY(-280%);
+                opacity: 0;
+                animation: slideInfo3 20s ease infinite;
+            }
+            .info-4{
+                transform: translateY(-420%);
+                opacity: 0;
+                animation: slideInfo4 20s ease infinite;
+            }
+            .info-5{
+                transform: translateY(-560%);
+                opacity: 0;
+                animation: slideInfo5 20s ease infinite;
+            }
+            .info-6{
+                transform: translateY(-700%);
+                opacity: 0;
+                animation: slideInfo6 20s ease infinite;
+            }
+            @keyframes slideInfo1{
+                0%{
+                    opacity: 1;
+                }
+                20%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 0;
+                }
+                60%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            
+            @keyframes slideInfo2{
+                0%{
+                    opacity: 0;
+                }
+                20%{
+                    opacity: 1;
+                }
+                40%{
+                    opacity: 0;
+                }
+                60%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            
+            
+            @keyframes slideInfo3{
+                0%{
+                    opacity: 0;
+                }
+                20%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 1;
+                }
+                60%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            
+            
+            @keyframes slideInfo4{
+                0%{
+                    opacity: 0;
+                }
+                20%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 0;
+                }
+                60%{
+                    opacity: 1;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            
+            
+            @keyframes slideInfo5{
+                0%{
+                    opacity: 0;
+                }
+                20%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 0;
+                }
+                60%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            
+            
+            @keyframes slideInfo6{
+                0%{
+                    opacity: 0;
+                }
+                20%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 0;
+                }
+                60%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .opacityBanner{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        opacity: .5;
+        background: linear-gradient(180deg,transparent,rgba(0,0,0,.7));
+    }
+    .bannerContent{
+        position: absolute;
+        top: 0;
+        left: 0; 
+        transform: translate(50%,70%);
+        font-family: 'Roboto Slab', serif;
+        h1{  
+            @include text($black,$fs-34 - 5,$fw-700);
+            margin-bottom: 30px;
+            @include md{
+                font-size: 30px;
+            } 
+            
+        }
+        @include rwd(1520) {
+            transform: translate(5%,70%);
+        }
+        @include rwd(992) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        @include md{
+            width: 80%;
+        }
+        form{
+            display:flex;
+            position: relative;
+            @include lg{
+                flex-direction: column;
+            }
+            &::after{
+                font: 16px FontAwesome;
+                content: "\f002";
+                position: absolute;
+                top: 0px;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 46px;
+                color: $gray-normal;
+                @include lg{
+                    top: -27px;
+                }
+            }
+            input{
+                width: 81%;
+                padding: 15px 46px;
+                border: none;
+                border: 0.5px solid $white;
+                @include rwd(768){
+                    width: 100%
+                }
+                @include lg{
+                    width: 100%;
+                }
+                &::placeholder{
+                    @include text($gray-normal,$fs-15,$fw-normal);
+                }
+                &:focus{
+                    outline: none;
+                    border-right: none;
+                    border: 0.5px solid $gray-bold;
+                }
+            }
+            .btnSearch{
+                width: 19%;
+                background-color: $green;
+                border: none;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                @include lg{
+                    width: 100%;
+                    margin-top: 10px;
+                    padding: 10px;
+                }
+                &:hover{
+                    background-color: rgba(29, 191, 115, 0.815);
+                }
+                a{
+                    @include text($white,$fs-18,$fw-bold);
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                }
+            }
+        }
+        .menuPopular{
+            display: flex;
+            margin-top: 25px;
+            font-size: $fs-13;
+            color: $gray-bold;
+            @include lg{
+                display: none;
+            }
+            p{
+                font-weight: bold;
+                margin-right: 20px;
+                width: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include rwd(768){
+                    margin-right: 5px;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                li{
+                    list-style: none;
+                    border: 1px solid $gray-bold;
+                    padding: 3px 10px;
+                    border-radius: 6px;
+                    transition: all .5s;
+                    @include rwd(768){
+                        padding: 3px 5px;
+                    }
+                    &:hover{
+                        background-color: $gray-bold;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        @include rwd(768){
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

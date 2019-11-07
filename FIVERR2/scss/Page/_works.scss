@@ -1,0 +1,27 @@
+.works{
+    background: #f7f7f7;
+    padding: 50px 0;
+    .title{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .row{
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        .col-md-4{
+            img{
+                height: 50px;
+            }
+            h1{
+                @include text($gray-normal,$fs-22,$fw-bold);
+                margin-top: 10px
+            }
+            p{
+                color: $gray-normal;
+            }
+        }
+    }
+}

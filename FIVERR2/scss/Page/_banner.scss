@@ -1,0 +1,80 @@
+.callout {
+    position: relative;
+    overflow: hidden;
+    height: 580px;
+    .video-bg,.video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        .content12{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+            h1{
+                font-size: 50px;
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            p{
+                font-size: 25px;
+                margin-bottom: 35px;
+            }
+            a{
+                padding: 16px 36px;
+                background: $green;
+                color: white;
+                font-weight: bold;
+                border-radius: 6px;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+        .opacity{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 134px;
+            background: rgba(255, 255, 255, 0.178);
+            .row{
+                width: 85%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                .col-md-4{
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+    .video-overlay {
+        pointer-events: none; /* Allows right clicking on the video to pause etc */
+    }
+    .video-bg video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .callout-content {
+        position: relative;
+        text-align: center;
+        margin: 50px 0; /* This adds some space around the video */
+        color: #FFF;
+        text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    }
+}
